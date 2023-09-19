@@ -22,7 +22,7 @@ namespace Application.Validators
         {
             var command = context.ActionArguments.Values.OfType<UpdateEmployeeCommand>().FirstOrDefault();
 
-            if (command.id == 0)
+            if (command.id == null)
             {
                 context.Result = new BadRequestResult();
                 return;

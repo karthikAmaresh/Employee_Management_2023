@@ -21,7 +21,7 @@ namespace Application.Handlers
 
         public Task<Employee> Handle(GetEmployeeByIdQuery request, CancellationToken cancellationToken)
         {
-            return Task.FromResult(_employeeService.GetEmployee(request.EmployeeId));
+            return _employeeService.GetEmployee(request.EmployeeId);
         }
     }
 }

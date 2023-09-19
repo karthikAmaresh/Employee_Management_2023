@@ -2,11 +2,6 @@
 using Application.Queries;
 using Domain.Entities;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Application.Handlers
 {
@@ -21,7 +16,7 @@ namespace Application.Handlers
 
         public Task<List<Employee>> Handle(GetEmployeeListQuery request, CancellationToken cancellationToken)
         {
-            return Task.FromResult(_employeeService.GetEmployees());
+            return _employeeService.GetEmployees();
         }
     }
 }

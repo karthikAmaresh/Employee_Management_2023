@@ -7,18 +7,36 @@ using Application.Interfaces;
 using Application.Validators;
 using Domain.Entities.Context;
 using Infrastructure.Services;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Azure.Cosmos;
 
 var builder = WebApplication.CreateBuilder(args);
 
 
 // Add services to the container.
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly()));
-builder.Services.AddScoped<ValidationFilter>();
-builder.Services.AddScoped<ValidateEmployeeExistance>();
-builder.Services.AddScoped<IEmployeeService, EmployeeService>();
+
+/*builder.Services.AddScoped<ValidationFilter>();
+*//*
 builder.Services.AddDbContext<EmployeeDBContext>(options =>
     options.UseSqlServer(builder.Configuration["Data:DefaultConnection:ConnectionString"]).EnableSensitiveDataLogging());
+*/
+string url = builder.Configuration.GetSection("AzureCosmosDBSettings").GetValue<string>("URL");
+string primaryKey = builder.Configuration.GetSection("AzureCosmosDBSettings").GetValue<string>("PrimaryKey");
+string dbName = builder.Configuration.GetSection("AzureCosmosDBSettings").GetValue<string>("DatabaseName");
+string containerName = builder.Configuration.GetSection("AzureCosmosDBSettings").GetValue<string>("ContainerName");
 
+
+builder.Services.AddSingleton<IEmployeeService>(options =>
+{
+
+    var cosmosClient = new CosmosClient(url, primaryKey);
+    return new EmployeeService(cosmosClient, dbName, containerName);
+
+});
+
+builder.Services.AddTransient<IEmployeeService, EmployeeService>();
 builder.Services.AddHttpClient("CustomHttpClient")
             .AddHttpMessageHandler<CustomDelegationHandler>();
 

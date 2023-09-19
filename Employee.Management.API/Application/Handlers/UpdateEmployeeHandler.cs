@@ -20,7 +20,7 @@ namespace Application.Handlers
         }
         public Task<Employee> Handle(UpdateEmployeeCommand command, CancellationToken cancellationToken)
         {
-            return Task.FromResult(_employeeService.UpdateEmployee(command));
+            return _employeeService.UpdateEmployee(command);
         }
     }
 }

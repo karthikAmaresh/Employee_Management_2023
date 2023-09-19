@@ -10,9 +10,9 @@ namespace Application.Queries
 {
     public class GetEmployeeByIdQuery : IRequest<Employee>
     {
-        public int EmployeeId { get; set; }
+        public string EmployeeId { get; set; }
 
-        public GetEmployeeByIdQuery(int employeeId)
+        public GetEmployeeByIdQuery(string employeeId)
         {
             EmployeeId = employeeId;
         }

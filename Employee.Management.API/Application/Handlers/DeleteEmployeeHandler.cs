@@ -20,7 +20,7 @@ namespace Application.Handlers
 
         public Task<bool> Handle(DeleteEmployeeById request, CancellationToken cancellationToken)
         {
-            return Task.FromResult(_employeeService.DeleteEmployee(request.EmployeeId));
+            return _employeeService.DeleteEmployee(request.EmployeeId);
         }
     } 
 }

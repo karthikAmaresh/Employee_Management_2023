@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Application.Commands
 {
-    public class AddEmployeeCommand : IRequest<Employee>
+    public class AddEmployeeCommand : IRequest<string>
     {
         public int age { get; set; }
         public string firstName { get; set; }

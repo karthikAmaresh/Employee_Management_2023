@@ -10,7 +10,7 @@ namespace Application.Commands
 {
     public class UpdateEmployeeCommand : IRequest<Employee>
     {
-        public int id { get; set; }
+        public string id { get; set; }
         public int age { get; set; }
         public string firstName { get; set; }
         public string lastName { get; set; }

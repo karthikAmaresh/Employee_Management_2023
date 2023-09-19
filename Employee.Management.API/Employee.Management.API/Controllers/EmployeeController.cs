@@ -30,9 +30,9 @@ namespace Employee.Management.API.Controllers
 
         // GET api/<EmployeeController>/5
         [HttpGet("{id}")]
-        [ServiceFilter(typeof(ValidateEmployeeExistance))]
-
-        public async Task<IActionResult> GetEmployeeById(int id)
+/*        [ServiceFilter(typeof(ValidateEmployeeExistance))]
+*/
+        public async Task<IActionResult> GetEmployeeById(string id)
         {
             var result = _mediator.Send(new GetEmployeeByIdQuery(id));
             return new OkObjectResult(result);
@@ -82,7 +82,7 @@ namespace Employee.Management.API.Controllers
         }
 
         // PUT api/<EmployeeController>/5
-        [HttpPut]
+        /*[HttpPut]
         public async Task<IActionResult> UpdateEmployee(UpdateEmployeeCommand command)
         {
 
@@ -122,11 +122,11 @@ namespace Employee.Management.API.Controllers
             {
                 return new BadRequestObjectResult(validationResult.Errors.Select(x => x.ErrorMessage));
             }
-        }
+        }*/
 
         // DELETE api/<EmployeeController>/5
         [HttpDelete("{id}")]
-        [ServiceFilter(typeof(ValidateEmployeeExistance))]
+        /*[ServiceFilter(typeof(ValidateEmployeeExistance))]*/
 
         public async Task<IActionResult> DeleteEmployee(int id)
         {

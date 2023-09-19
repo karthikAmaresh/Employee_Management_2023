@@ -13,3 +13,5 @@ C:\Users\karthik.amaresh\OneDrive - Neudesic\Desktop\Goals\Q3 Goals\Employee_Man
 C:\Users\karthik.amaresh\OneDrive - Neudesic\Desktop\Goals\Q3 Goals\Employee_Management_2023\Employee.Management.API\Application\obj\Debug\net6.0\refint\Application.dll
 C:\Users\karthik.amaresh\OneDrive - Neudesic\Desktop\Goals\Q3 Goals\Employee_Management_2023\Employee.Management.API\Application\obj\Debug\net6.0\Application.pdb
 C:\Users\karthik.amaresh\OneDrive - Neudesic\Desktop\Goals\Q3 Goals\Employee_Management_2023\Employee.Management.API\Application\obj\Debug\net6.0\ref\Application.dll
+C:\Users\karthik.amaresh\OneDrive - Neudesic\Desktop\Goals\Q3 Goals\Employee_Management_2023\Employee.Management.API\Application\bin\Debug\net6.0\Application.runtimeconfig.json
+C:\Users\karthik.amaresh\OneDrive - Neudesic\Desktop\Goals\Q3 Goals\Employee_Management_2023\Employee.Management.API\Application\obj\Debug\net6.0\Application.genruntimeconfig.cache
