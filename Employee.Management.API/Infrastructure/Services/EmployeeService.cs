@@ -3,6 +3,7 @@ using Application.Interfaces;
 using Azure;
 using Domain.Entities;
 using Domain.Entities.Context;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Azure.Cosmos;
 using Microsoft.Azure.Cosmos.Linq;
 using Microsoft.Extensions.Logging;
@@ -165,11 +166,11 @@ namespace Infrastructure.Services
             {
                 var cosmosQuery = "Select * from c";
                 var query = _container.GetItemQueryIterator<Employee>(new QueryDefinition(cosmosQuery));
-                List<Employee> results = new List<Employee>();
+                var results = new List<Employee>();
                 while (query.HasMoreResults)
                 {
                     var response = await query.ReadNextAsync();
-                    results.AddRange(response);
+                    results.AddRange(response.ToList());
                 }
                 return results;
             }

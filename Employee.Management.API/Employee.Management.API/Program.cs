@@ -36,7 +36,6 @@ builder.Services.AddSingleton<IEmployeeService>(options =>
 
 });
 
-builder.Services.AddTransient<IEmployeeService, EmployeeService>();
 builder.Services.AddHttpClient("CustomHttpClient")
             .AddHttpMessageHandler<CustomDelegationHandler>();
 

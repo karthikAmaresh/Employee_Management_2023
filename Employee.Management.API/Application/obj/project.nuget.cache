@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "pLgBBvXRGsJEBMCNZanWZDETQ8YDRTfH90Qvgh9C6ZrwW8laTOvwEhpum9sG8lsvD0/sBRi1ggFtZFHku2ZoAg==",
+  "dgSpecHash": "ZYWdCXFtd9FTJiQoRdVKZHrrJsmCPv6x8Xv/+SLabi1hUWk5yZQxalQNZ4bbeu191aW8oWjTv6A+D7cF8owGcA==",
   "success": true,
   "projectFilePath": "C:\\Users\\karthik.amaresh\\OneDrive - Neudesic\\Desktop\\Goals\\Q3 Goals\\Employee_Management_2023\\Employee.Management.API\\Application\\Application.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "C:\\Users\\karthik.amaresh\\.nuget\\packages\\fluentvalidation\\11.7.1\\fluentvalidation.11.7.1.nupkg.sha512",
     "C:\\Users\\karthik.amaresh\\.nuget\\packages\\mediatr\\12.1.1\\mediatr.12.1.1.nupkg.sha512",
     "C:\\Users\\karthik.amaresh\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\karthik.amaresh\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
     "C:\\Users\\karthik.amaresh\\.nuget\\packages\\microsoft.applicationinsights\\2.21.0\\microsoft.applicationinsights.2.21.0.nupkg.sha512",
     "C:\\Users\\karthik.amaresh\\.nuget\\packages\\microsoft.aspnet.mvc\\5.2.9\\microsoft.aspnet.mvc.5.2.9.nupkg.sha512",
     "C:\\Users\\karthik.amaresh\\.nuget\\packages\\microsoft.aspnet.razor\\3.2.9\\microsoft.aspnet.razor.3.2.9.nupkg.sha512",
@@ -214,6 +215,16 @@
     "C:\\Users\\karthik.amaresh\\.nuget\\packages\\system.xml.xpath.xdocument\\4.3.0\\system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
   ],
   "logs": [
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 requires MediatR (>= 11.0.0 && < 12.0.0) but version MediatR 12.1.1 was resolved.",
+      "libraryId": "MediatR",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
     {
       "code": "NU1701",
       "level": "Warning",

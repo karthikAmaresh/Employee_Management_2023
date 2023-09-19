@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ZgMk2Ig04cXeo1CV7kyZLe4AECVtSPV0hqwnz7mEktq5UCdlZ8HfyunOkQzfUqoPPaQYtkKtWulGpNMLtHjsGA==",
+  "dgSpecHash": "d4UYiGSQBCV4mu89XpIpQIhGLD5+xC7dBfNUuu5fjrvx48DvLPMUxT2A+xc6uXwOw0v9NCX199cNNZevlDTyaw==",
   "success": true,
   "projectFilePath": "C:\\Users\\karthik.amaresh\\OneDrive - Neudesic\\Desktop\\Goals\\Q3 Goals\\Employee_Management_2023\\Employee.Management.API\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,7 @@
     "C:\\Users\\karthik.amaresh\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.7.1\\fluentvalidation.dependencyinjectionextensions.11.7.1.nupkg.sha512",
     "C:\\Users\\karthik.amaresh\\.nuget\\packages\\mediatr\\12.1.1\\mediatr.12.1.1.nupkg.sha512",
     "C:\\Users\\karthik.amaresh\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\karthik.amaresh\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
     "C:\\Users\\karthik.amaresh\\.nuget\\packages\\microsoft.applicationinsights\\2.21.0\\microsoft.applicationinsights.2.21.0.nupkg.sha512",
     "C:\\Users\\karthik.amaresh\\.nuget\\packages\\microsoft.aspnet.mvc\\5.2.9\\microsoft.aspnet.mvc.5.2.9.nupkg.sha512",
     "C:\\Users\\karthik.amaresh\\.nuget\\packages\\microsoft.aspnet.razor\\3.2.9\\microsoft.aspnet.razor.3.2.9.nupkg.sha512",
@@ -218,6 +219,16 @@
     "C:\\Users\\karthik.amaresh\\.nuget\\packages\\windowsazure.storage\\9.3.3\\windowsazure.storage.9.3.3.nupkg.sha512"
   ],
   "logs": [
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 requires MediatR (>= 11.0.0 && < 12.0.0) but version MediatR 12.1.1 was resolved.",
+      "libraryId": "MediatR",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
     {
       "code": "NU1701",
       "level": "Warning",

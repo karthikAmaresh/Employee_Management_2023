@@ -52,6 +52,10 @@
               "target": "Package",
               "version": "[12.1.1, )"
             },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
             "Microsoft.ApplicationInsights": {
               "target": "Package",
               "version": "[2.21.0, )"
@@ -124,6 +128,10 @@
             "EntityFramework": {
               "target": "Package",
               "version": "[6.4.4, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",

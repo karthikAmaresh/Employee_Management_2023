@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "H/hWGTxAczoRJwYdhAkR2LgDU7Yxgw/5S0OoaVKWoBaVGEdOQoHEk3Zsx5d+SMlbYE1NcqHR2tbVbMsQCX/gRw==",
+  "dgSpecHash": "3txS81Lu+WJJr1BgWv6cmceMwq3jpimxvBn7akuz5B5uFspmJ3bzGNJoh8O4YG6bAjCOy7B339pR+Cc7c5TQYQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\karthik.amaresh\\OneDrive - Neudesic\\Desktop\\Goals\\Q3 Goals\\Employee_Management_2023\\Employee.Management.API\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\karthik.amaresh\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\karthik.amaresh\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\karthik.amaresh\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
+    "C:\\Users\\karthik.amaresh\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
+    "C:\\Users\\karthik.amaresh\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\karthik.amaresh\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
     "C:\\Users\\karthik.amaresh\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\karthik.amaresh\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\karthik.amaresh\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.2\\microsoft.data.sqlclient.5.0.2.nupkg.sha512",

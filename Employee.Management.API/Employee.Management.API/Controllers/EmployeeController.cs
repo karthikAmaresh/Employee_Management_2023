@@ -22,9 +22,10 @@ namespace Employee.Management.API.Controllers
         }
         // GET: api/<EmployeeController>
         [HttpGet]
-        public async Task<List<Domain.Entities.Employee>> GetEmployees()
+        public async Task<IActionResult> GetEmployees()
         {
-            return await _mediator.Send(new GetEmployeeListQuery());
+            var result = await _mediator.Send(new GetEmployeeListQuery());
+            return Ok(result);
 
         }
 

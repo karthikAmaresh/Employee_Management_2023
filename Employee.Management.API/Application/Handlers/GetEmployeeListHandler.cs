@@ -5,7 +5,7 @@ using MediatR;
 
 namespace Application.Handlers
 {
-    public class GetEmployeeListHandler : IRequestHandler<GetEmployeeListQuery, List<Employee>>
+    public class GetEmployeeListHandler : IRequestHandler<GetEmployeeListQuery,List<Employee>>
     {
         private readonly IEmployeeService _employeeService;
 
